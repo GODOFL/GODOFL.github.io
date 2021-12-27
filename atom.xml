@@ -6,7 +6,7 @@
   <link href="https://godofl.github.io/atom.xml" rel="self"/>
   
   <link href="https://godofl.github.io/"/>
-  <updated>2021-12-24T03:49:53.950Z</updated>
+  <updated>2021-12-24T15:59:11.201Z</updated>
   <id>https://godofl.github.io/</id>
   
   <author>
@@ -17,18 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>matlab笔记</title>
     <link href="https://godofl.github.io/2021/12/22/matlab%20notes/"/>
     <id>https://godofl.github.io/2021/12/22/matlab%20notes/</id>
     <published>2021-12-22T07:31:24.164Z</published>
-    <updated>2021-12-24T03:49:53.950Z</updated>
+    <updated>2021-12-24T15:59:11.201Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="matlab笔记"><a href="#matlab笔记" class="headerlink" title="matlab笔记"></a>matlab笔记</h1><p>q:述程序中在使用 mesh 函数显示图像曲面之前，为什么执行先将图像数据强制转换成双精度类型？<br>a:函数im2double将输入转换成double类型。如果输入是uint8、unit16 或者是二值的logical类型，则函数im2double 将其值归一化到0～1之间，当然就是double类型的了。如果输入本身就是double类型，输出还是double类型，并不进行映射。（意思理解就行）<br>图像处理的归一化公式如下:</p><script type="math/tex; mode=display">norm=\frac{x_i-min(x)}{max(x)-min(x)}</script><p><strong>其中x~i~表示该点图像像素值，min(x),max(x)分别表示图像像素的最大与最小值</strong>。</p>]]></content>
+    <content type="html"><![CDATA[<p>hsv:色调（H），饱和度（S），明度（V）。</p><p>q:述程序中在使用 mesh 函数显示图像曲面之前，为什么执行先将图像数据强制转换成双精度类型？<br>a:mesh函数只能传入double类型和single类型的参数，图像是uint类型，所以使用前要强制转换为double。</p><p>函数im2double将输入转换成double类型。如果输入是uint8、unit16 或者是二值的logical类型，则函数im2double 将其值归一化到0～1之间，当然就是double类型的了。如果输入本身就是double类型，输出还是double类型，并不进行映射。（意思理解就行）<br>图像处理的归一化公式如下:</p><script type="math/tex; mode=display">norm=\frac{x_i-min(x)}{max(x)-min(x)}</script><p><strong>其中x~i~表示该点图像像素值，min(x),max(x)分别表示图像像素的最大与最小值</strong>。</p><p>subplot（m,n,p）或者subplot（mnp）此函数最常用：subplot是将多个图画到一个平面上的工具。其中，m表示是图排成m行，n表示图排成n列，也就是整个figure中有n个图是排成一行的，一共m行，如果第一个数字是2就是表示2行图。p是指你现在要把曲线画到figure中哪个图上，最后一个如果是1表示是从左到右第一个位置。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;matlab笔记&quot;&gt;&lt;a href=&quot;#matlab笔记&quot; class=&quot;headerlink&quot; title=&quot;matlab笔记&quot;&gt;&lt;/a&gt;matlab笔记&lt;/h1&gt;&lt;p&gt;q:述程序中在使用 mesh 函数显示图像曲面之前，为什么执行先将图像数据强制转换成双精度类</summary>
+    <summary type="html">&lt;p&gt;hsv:色调（H），饱和度（S），明度（V）。&lt;/p&gt;
+&lt;p&gt;q:述程序中在使用 mesh 函数显示图像曲面之前，为什么执行先将图像数据强制转换成双精度类型？&lt;br&gt;a:mesh函数只能传入double类型和single类型的参数，图像是uint类型，所以使用前要强制转换为</summary>
       
     
     
