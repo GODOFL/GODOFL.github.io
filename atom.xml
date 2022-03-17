@@ -6,7 +6,7 @@
   <link href="https://godofl.github.io/atom.xml" rel="self"/>
   
   <link href="https://godofl.github.io/"/>
-  <updated>2022-03-16T12:20:34.743Z</updated>
+  <updated>2022-03-17T05:14:35.274Z</updated>
   <id>https://godofl.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AI 数学基础</title>
+    <link href="https://godofl.github.io/2022/03/17/AI/"/>
+    <id>https://godofl.github.io/2022/03/17/AI/</id>
+    <published>2022-03-17T02:25:53.420Z</published>
+    <updated>2022-03-17T05:14:35.274Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="学AI必须掌握的数学基础"><a href="#学AI必须掌握的数学基础" class="headerlink" title="学AI必须掌握的数学基础"></a>学AI必须掌握的数学基础</h1><h2 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h2><p>对于定义域和值域都是实数域的函数𝑓 ∶ ℝ → ℝ，若𝑓(𝑥)在点𝑥0 的某个邻<br>域Δ𝑥内，极限</p><script type="math/tex; mode=display">f^{'}(x_0) = \lim\limits_{x\rightarrow\infty}\frac{f(x_0+\Delta{x})-f(x_0)}{\Delta{x} }</script><p>存在，则称函数f(x)在$x_0$处可导，$f^{‘}(x_0)$称为其导数，或导函数，也可记为$\frac{ {\rm d}f(x)}{ {d}x}$</p><h2 id="微分"><a href="#微分" class="headerlink" title="微分"></a>微分</h2><p>给定一个连续函数，计算其导数的过程称为微分（Differentiation）．若函<br>数𝑓(𝑥)在其定义域包含的某区间内每一个点都可导，那么也可以说函数𝑓(𝑥)在<br>这个区间内可导．如果一个函数 𝑓(𝑥) 在定义域中的所有点都存在导数，则 𝑓(𝑥)<br>为可微函数（Differentiable Function）．可微函数一定连续，但连续函数不一定<br>可微．例如，函数|𝑥|为连续函数，但在点𝑥 = 0处不可导</p><h2 id="泰勒公式"><a href="#泰勒公式" class="headerlink" title="泰勒公式"></a>泰勒公式</h2><p>如果函数𝑓(𝑥)在𝑎点处𝑛次可导（𝑛≥1），在一个包含点𝑎的区间上的任意𝑥，都有</p><script type="math/tex; mode=display">f(x) = f(a)+\frac{1}{1!}f^{'}(a)(x-a)+\frac{1}{2!}f^{(2)}(a)(x-a)^2+...+\frac{1}{n!}f^{(n)}(a)(x-a)^n+R_n(x)</script><p>其中$f^{(n)}(a)$表示函数在点a的n阶导数，$R_n(x)$是泰勒公式的余项，是$(x-a)^{n}$的高阶无穷小<br>常用的八个泰勒公式记忆方法<br>“e ‘1’ sin cos 带阶乘”<br>函数正负看图像</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;学AI必须掌握的数学基础&quot;&gt;&lt;a href=&quot;#学AI必须掌握的数学基础&quot; class=&quot;headerlink&quot; title=&quot;学AI必须掌握的数学基础&quot;&gt;&lt;/a&gt;学AI必须掌握的数学基础&lt;/h1&gt;&lt;h2 id=&quot;导数&quot;&gt;&lt;a href=&quot;#导数&quot; class=&quot;</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>PHP notes</title>
