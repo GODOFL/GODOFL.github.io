@@ -6,7 +6,7 @@
   <link href="https://godofl.github.io/atom.xml" rel="self"/>
   
   <link href="https://godofl.github.io/"/>
-  <updated>2022-10-20T04:49:29.448Z</updated>
+  <updated>2022-10-21T16:08:51.629Z</updated>
   <id>https://godofl.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C专家编程</title>
+    <link href="https://godofl.github.io/2022/10/21/C%E6%B7%B1%E5%85%A5/"/>
+    <id>https://godofl.github.io/2022/10/21/C%E6%B7%B1%E5%85%A5/</id>
+    <published>2022-10-21T09:15:23.222Z</published>
+    <updated>2022-10-21T16:08:51.629Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>看到有趣的就从书里抄下啦</p><h1 id="一个微妙的bug"><a href="#一个微妙的bug" class="headerlink" title="一个微妙的bug"></a>一个微妙的bug</h1><p>先看看代码：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="built_in">array</span>[] = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>&#125;;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TOTAL_ELEMENTS (sizeof(array) / sizeof(array[0]))</span></span><br><span class="line"></span><br><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> d = <span class="number">-1</span>, x;</span><br><span class="line">    <span class="comment">/*...*/</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(d &lt;= TOTAL_ELEMENTS - <span class="number">2</span>)</span><br><span class="line">        x = <span class="built_in">array</span>[d + <span class="number">1</span>];</span><br><span class="line">    <span class="comment">/*...*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>这个程序里的判断里需要的是变量d小于数组下标-1，但if表达式的值却不是真，原因在于sizeof()返回的是unsigned无符号数，而变量d为int型，if为了测试相等性将变量d升级为unsigned int导致变量d是一个非常大的整数，if表达式一直为假，解决方法将TOTAL_ELEMENTS进行强转if(d &lt;= (int)TOTAL_ELEMENTS - 2)。</p><h1 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h1><div class="table-container"><table><thead><tr><th style="text-align:left">优先级问题</th><th style="text-align:left">表达式</th><th style="text-align:left">人们可能会误解的结果</th><th style="text-align:left">实际结果</th></tr></thead><tbody><tr><td style="text-align:left">.的优先级高于*，-&gt;用于消除这个问题</td><td style="text-align:left">*p.f</td><td style="text-align:left">p所指对象的字段f，(*p).f</td><td style="text-align:left">对p取f偏移，作为指针，然后进行解除应用操作*(p.f)</td></tr><tr><td style="text-align:left">[]高于*</td><td style="text-align:left">int *ap[]</td><td style="text-align:left">ap是个指向int数组的指针int(*ap)[]</td><td style="text-align:left">ap是个元素为int指针的数组int *(ap[])</td></tr><tr><td style="text-align:left">函数()高于*</td><td style="text-align:left">int *fp()</td><td style="text-align:left">fp是个函数指针，所指函数返回int，int(*fp)()</td><td style="text-align:left">fp是个函数，返回int <em>，int </em>(fp())</td></tr><tr><td style="text-align:left">==和!=高于位操作符</td><td style="text-align:left">(val &amp; mask != 0)</td><td style="text-align:left">(val &amp; mask) != 0</td><td style="text-align:left">val &amp; (mask != 0)</td></tr><tr><td style="text-align:left">==和!=高于赋值符</td><td style="text-align:left">c = getchar() != EOF</td><td style="text-align:left">(c = getchar()) != EOF</td><td style="text-align:left">c = (getchar != EOF)</td></tr><tr><td style="text-align:left">算术运算高于位移运算符</td><td style="text-align:left">msb &lt;&lt; 4 + lsb</td><td style="text-align:left">(msb &lt;&lt; 4) + lsb</td><td style="text-align:left">msb &lt;&lt; (4 + lsb)</td></tr><tr><td style="text-align:left">逗号运算符在所有运算符中优先级最低</td><td style="text-align:left">i = 1, 2</td><td style="text-align:left">i = (1, 2)</td><td style="text-align:left">(i = 1), 2</td></tr></tbody></table></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h1&gt;&lt;p&gt;看到有趣的就从书里抄下啦&lt;/p&gt;
+&lt;h1 id=&quot;一个微妙的bug&quot;&gt;&lt;a href=&quot;#一个微妙的bug&quot; class=&quot;headerli</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>机器人与电赛</title>

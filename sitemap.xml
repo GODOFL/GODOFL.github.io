@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://godofl.github.io/2022/10/21/C%E6%B7%B1%E5%85%A5/</loc>
+    
+    <lastmod>2022-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://godofl.github.io/2022/10/20/%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%8E%E7%94%B5%E8%B5%9B/</loc>
     
     <lastmod>2022-10-20</lastmod>
@@ -40,7 +49,7 @@
 
   <url>
     <loc>https://godofl.github.io/</loc>
-    <lastmod>2022-10-20</lastmod>
+    <lastmod>2022-10-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
