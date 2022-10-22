@@ -6,7 +6,7 @@
   <link href="https://godofl.github.io/atom.xml" rel="self"/>
   
   <link href="https://godofl.github.io/"/>
-  <updated>2022-10-21T16:08:51.629Z</updated>
+  <updated>2022-10-22T06:34:56.950Z</updated>
   <id>https://godofl.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据结构</title>
+    <link href="https://godofl.github.io/2022/10/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    <id>https://godofl.github.io/2022/10/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</id>
+    <published>2022-10-22T05:35:21.942Z</published>
+    <updated>2022-10-22T06:34:56.950Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="时间复杂度与空间复杂度"><a href="#时间复杂度与空间复杂度" class="headerlink" title="时间复杂度与空间复杂度"></a>时间复杂度与空间复杂度</h1><h2 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h2><p>在进行算法分析时，语句总的执行次数T(n)是关于问题规模n的函数，进而分析T(n)随n的变化情况并确定T(n)的数量级算法的时间复杂度，也就是算法的时间量度，记作：T(n)=O(f(n))。表示随问题规模n的增大，算法执行时间的增长率和f(n)的增长率相同，称作算法的渐进时间复杂度，简称为时间复杂度。其中f(n)是问题规模n的某个函数。</p><p>如何分析算法时间复杂度：</p><ol><li>用常数1取代运行时间中的所有加法常数</li><li>在修改后的运行次数函数中，只保留最高阶项</li><li>如果最高阶项存在且不是1，则去除与这个项相乘的常数</li><li>得到的结果就是大O阶</li></ol><p>常见时间复杂度<br>|例子 | 时间复杂度 | 装逼术语 |<br>|:—: | :—: | :—: |<br>|$123123$ | $O(1)$ | 常数阶 |<br>|$3n + 4$ | $O(n)$ | 线性阶 |<br>|$3n^2 + 4n +5$ | $O(n^2)$ | 平方阶 |<br>|$3\log_2n + 4$ | $O(\log_2n)$ | 对数阶 |<br>|$2n + 3n\log_2n + 14$ | $O(n\log_2n)$ | $n\log_2n阶$ |<br>|$n^3 + 2n^2 + 4n +6$ | $O(n^3)$ | 立方阶 |<br>|$2^n$ | $O(2^n)$ | 指数阶 |<br>耗费时间从小到大排序：$O(1)$ &lt; $O(\log_2n)$ &lt; $O(n)$ &lt; $O(n\log_2n)$ &lt; $O(n^2)$ &lt; $O(n^3)$ &lt; $O(2^n)$</p><h2 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h2><p>算法的空间复杂度通过计算算法所需的存储空间实现，算法的空间复杂度的计算公式记作：S(n)=O(f(n))，其中，n为问题的规模，f(n)为语句关于n所占存储空间的函数。<br>在写代码时可以使用空间换时间，也可以时间换空间。</p><h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;时间复杂度与空间复杂度&quot;&gt;&lt;a href=&quot;#时间复杂度与空间复杂度&quot; class=&quot;headerlink&quot; title=&quot;时间复杂度与空间复杂度&quot;&gt;&lt;/a&gt;时间复杂度与空间复杂度&lt;/h1&gt;&lt;h2 id=&quot;时间复杂度&quot;&gt;&lt;a href=&quot;#时间复杂度&quot; class</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>C专家编程</title>
